@@ -18,7 +18,7 @@ def clean_text(text):
     return pattern.sub('', text)
 
 # 데이터 로딩
-data = pd.read_csv('/Users/kmj/Desktop/캡스톤/최종 캡스톤 데이터.csv', on_bad_lines='skip', encoding='utf-8-sig')
+data = pd.read_csv('data.csv', on_bad_lines='skip', encoding='utf-8-sig')
 
 # 관련 열에 결측치가 있는 행 제거
 filtered_data = data.dropna(subset=['TYPE_GBN_U_NM', 'TYPE_GBN_NM', 'JOCHI_DESCR', 'D_YMD'])
